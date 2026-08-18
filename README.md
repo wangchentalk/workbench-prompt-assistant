@@ -70,7 +70,53 @@
 - 运营管理工作台
 - 自定义业务工作台
 
-## 使用方式
+## 安装
+
+### 方式一：使用 Git 克隆
+
+适合需要持续更新和参与维护的用户。
+
+```bash
+git clone https://github.com/wangchentalk/workbench-prompt-assistant.git ~/.workbuddy/skills/workbench-prompt-assistant
+```
+
+Windows 用户可以在 PowerShell 中执行
+
+```powershell
+git clone https://github.com/wangchentalk/workbench-prompt-assistant.git "$env:USERPROFILE\.workbuddy\skills\workbench-prompt-assistant"
+```
+
+### 方式二：下载 ZIP 压缩包
+
+1. 打开 GitHub 仓库页面。
+2. 点击 `Code`。
+3. 选择 `Download ZIP`。
+4. 解压后，将 `workbench-prompt-assistant` 文件夹复制到用户级 Skill 目录。
+5. 确认文件夹内直接包含 `SKILL.md`、`README.md`、`references` 和 `tests`。
+
+用户级 Skill 目录通常为
+
+```text
+Windows
+%USERPROFILE%\.workbuddy\skills\workbench-prompt-assistant\
+
+macOS 或 Linux
+~/.workbuddy/skills/workbench-prompt-assistant/
+```
+
+安装完成后，刷新 Skill 列表或重新启动 WorkBuddy。确认 Skill 列表中出现“工作台提示词助手”后即可开始使用。
+
+### 安装检查
+
+确认以下文件存在
+
+```text
+workbench-prompt-assistant/
+├── SKILL.md
+├── README.md
+├── references/
+└── tests/
+```
 
 ### 启动对话
 
@@ -150,6 +196,7 @@
 workbench-prompt-assistant/
 ├── SKILL.md
 ├── README.md
+├── LICENSE
 ├── references/
 │   ├── acceptance-checklist.md
 │   ├── examples.md
@@ -235,6 +282,10 @@ workbench-prompt-assistant/
 - 完整提示词包含验收标准、实现依赖和待确认事项。
 - 项目已经补充适合自身授权意愿的许可证文件。
 
-## 许可证
+## 许可证与版权
 
-当前目录未附带许可证文件。公开发布前，请根据项目所有者的授权意愿补充开源许可证，并在本节说明具体许可证名称和版权信息。
+本项目采用 MIT License 发布。
+
+版权所有 © 2026 wangchentalk。
+
+完整许可文本见仓库根目录的 `LICENSE` 文件。
